@@ -1,103 +1,222 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Bacaku</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; padding: 40px 20px; max-width: 800px; margin: auto; color: #333; background-color: #fff; }
-        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; color: #000; font-size: 1.8rem; }
-        h2 { margin-top: 30px; color: #444; font-size: 1.3rem; border-left: 4px solid #007bff; padding-left: 10px; }
-        h3 { font-size: 1.1rem; margin-bottom: 5px; color: #222; }
-        p, ul { margin-bottom: 15px; }
-        li { margin-bottom: 8px; }
-        .last-updated { color: #666; font-style: italic; margin-bottom: 30px; }
-        .lang-section { margin-bottom: 60px; }
-        .contact-box { background: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px solid #eee; margin-top: 20px; }
-        hr { border: 0; border-top: 2px solid #eee; margin: 50px 0; }
-        strong { color: #000; }
-    </style>
-    </head>
-    
-    <body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Bacaku</title>
+  <style>
+    :root {
+      --primary: #007bff;
+      --primary-soft: #eff6ff;
+      --text-main: #374151;
+      --text-dark: #111827;
+      --text-muted: #6b7280;
+      --bg-page: #f9fafb;
+      --card-bg: #ffffff;
+      --border: #e5e7eb;
+    }
 
-    <div class="lang-section">
-      <h1>Privacy Policy for Bacaku</h1>
-      <p class="last-updated">Last Updated: April 21, 2026</p>
-    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+      color: var(--text-main);
+      background-color: var(--bg-page);
+    }
+
+    .container {
+      background: var(--card-bg);
+      padding: 60px;
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+      letter-spacing: -0.025em;
+      text-align: center;
+    }
+
+    .last-updated {
+      color: var(--text-muted);
+      margin-bottom: 4rem;
+      font-size: 1rem;
+      text-align: center;
+      font-style: italic;
+    }
+
+    h2 {
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      color: var(--text-dark);
+      font-size: 1.5rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: "";
+      width: 4px;
+      height: 24px;
+      background: var(--primary);
+      border-radius: 4px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-dark);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+    }
+
+    ul {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.75rem;
+    }
+
+    strong {
+      color: var(--text-dark);
+    }
+
+    .contact-card {
+      background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+      padding: 32px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      margin-top: 40px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-card h3 {
+      margin-top: 0;
+      color: var(--primary);
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contact-card h3::before {
+      content: "✉️";
+      font-size: 1.2rem;
+    }
+
+    .email-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      padding: 8px 16px;
+      background: var(--primary-soft);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .email-link:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-1px);
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--border), transparent);
+      margin: 80px 0;
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 40px 15px; }
+      .container { padding: 30px; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last Updated: April 21, 2026</p>
+
+    <!-- English Version -->
+    <section>
       <h2>1. Introduction</h2>
-      <p>Welcome to <strong>"Bacaku,"</strong> an educational app designed for children aged 3–6. Your privacy and your
-        child's safety are our top priorities. This app is designed to be fully compliant with the Children’s Online Privacy
-        Protection Act (COPPA).</p>
-    
+      <p>Welcome to <strong>"Bacaku,"</strong> an educational app designed for children aged 3–6. Your privacy and your child's safety are our top priorities. This app is designed to be fully compliant with the Children’s Online Privacy Protection Act (COPPA).</p>
+
       <h2>2. Information Collection</h2>
-      <p>The app is used <strong>anonymously</strong>. We do not collect any personally identifiable information (PII) such
-        as names, email addresses, or phone numbers. We may collect non-personal technical data (e.g., device model, OS
-        version, and crash logs) solely to ensure the app works correctly on your device.</p>
-    
+      <p>The app is used <strong>anonymously</strong>. We do not collect any personally identifiable information (PII) such as names, email addresses, or phone numbers. We may collect non-personal technical data (e.g., device model, OS version, and crash logs) solely to ensure the app works correctly on your device.</p>
+
       <h2>3. Third-Party Services</h2>
       <p>We use the following services for app functionality and internal operations:</p>
       <ul>
-        <li><strong>Google AdMob:</strong> We show family-safe ads. AdMob may use anonymous identifiers for frequency
-          capping and limited reporting.</li>
-        <li><strong>RevenueCat:</strong> Processes anonymous transaction data for In-App Purchases (Premium). No personal
-          identity is stored.</li>
-        <li><strong>Firebase Analytics & Crashlytics:</strong> Used to monitor app performance and fix bugs. We have
-          disabled "Advertising ID" collection to protect child privacy.</li>
+        <li><strong>Google AdMob:</strong> We show family-safe ads. AdMob may use anonymous identifiers for frequency capping and limited reporting.</li>
+        <li><strong>RevenueCat:</strong> Processes anonymous transaction data for In-App Purchases (Premium). No personal identity is stored.</li>
+        <li><strong>Firebase Analytics & Crashlytics:</strong> Used to monitor app performance and fix bugs. We have disabled "Advertising ID" collection to protect child privacy.</li>
         <li><strong>Firebase Remote Config:</strong> Used to manage app updates and configurations.</li>
-        <li><strong>Speech Recognition:</strong> Uses the device's native API. Voice data is processed locally and is
-          <strong>NOT</strong> recorded or stored by us.</li>
+        <li><strong>Speech Recognition:</strong> Uses the device's native API. Voice data is processed locally and is <strong>NOT</strong> recorded or stored by us.</li>
       </ul>
-    
+
       <h2>4. Children's Privacy</h2>
-      <p>We do not knowingly collect personal information from children under 13. Our data collection is limited to
-        "internal operations" as permitted by COPPA to support the app's functions.</p>
-    
-      <div class="contact-box">
+      <p>We do not knowingly collect personal information from children under 13. Our data collection is limited to "internal operations" as permitted by COPPA to support the app's functions.</p>
+
+      <div class="contact-card">
         <h3>5. Contact Us</h3>
-        <p>If you have questions, contact us at: <strong>dawp.animation@gmail.com</strong></p>
+        <p>If you have questions about this policy, please reach out via email:</p>
+        <a href="mailto:dawp.animation@gmail.com" class="email-link">dawp.animation@gmail.com</a>
       </div>
-    </div>
-    
+    </section>
+
     <hr>
 
-    <div class="lang-section">
-      <h1>Kebijakan Privasi Bacaku</h1>
-      <p class="last-updated">Terakhir Diperbarui: 21 April 2026</p>
+    <!-- Indonesian Version -->
+    <section>
+      <h1 style="border:none; text-align: left; font-size: 2.1rem; margin-top: 0; margin-bottom: 2rem;">Kebijakan Privasi</h1>
+      
+      <h2>1. Pendahuluan</h2>
+      <p>Selamat datang di <strong>"Bacaku,"</strong> aplikasi edukasi untuk anak usia 3–6 tahun. Privasi dan keamanan anak Anda adalah prioritas utama kami. Aplikasi ini dirancang untuk mematuhi standar perlindungan privasi anak internasional (COPPA).</p>
 
-        <h2>1. Pendahuluan</h2>
-        <p>Selamat datang di <strong>"Bacaku,"</strong> aplikasi edukasi untuk anak usia 3–6 tahun. Privasi dan keamanan anak
-          Anda adalah prioritas utama kami. Aplikasi ini dirancang untuk mematuhi standar perlindungan privasi anak
-          internasional (COPPA).</p>
+      <h2>2. Pengumpulan Informasi</h2>
+      <p>Aplikasi ini digunakan secara <strong>anonim</strong>. Kami tidak mengumpulkan informasi identitas pribadi (PII) seperti nama, alamat email, atau nomor telepon. Kami mungkin mengumpulkan data teknis non-personal (seperti model perangkat, versi OS, dan log kerusakan) semata-mata untuk memastikan aplikasi berjalan dengan baik.</p>
 
-        <h2>2. Pengumpulan Informasi</h2>
-        <p>Aplikasi ini digunakan secara <strong>anonim</strong>. Kami tidak mengumpulkan informasi identitas pribadi (PII)
-          seperti nama, alamat email, atau nomor telepon. Kami mungkin mengumpulkan data teknis non-personal (seperti model
-          perangkat, versi OS, dan log kerusakan) semata-mata untuk memastikan aplikasi berjalan dengan baik.</p>
+      <h2>3. Layanan Pihak Ketiga</h2>
+      <p>Kami menggunakan layanan berikut untuk fungsi aplikasi dan operasional internal:</p>
+      <ul>
+        <li><strong>Google AdMob:</strong> Menampilkan iklan yang aman untuk keluarga. AdMob mungkin menggunakan pengidentifikasi anonim untuk pembatasan frekuensi iklan.</li>
+        <li><strong>RevenueCat:</strong> Memproses data transaksi anonim untuk Pembelian Dalam Aplikasi (Premium). Tidak ada identitas pribadi yang disimpan.</li>
+        <li><strong>Firebase Analytics & Crashlytics:</strong> Digunakan untuk memantau performa dan memperbaiki error. Kami menonaktifkan pengumpulan "ID Iklan" untuk melindungi privasi anak.</li>
+        <li><strong>Firebase Remote Config:</strong> Digunakan untuk mengelola pembaruan dan konfigurasi aplikasi.</li>
+        <li><strong>Pengenalan Suara:</strong> Menggunakan API bawaan perangkat. Data suara diproses secara lokal dan <strong>TIDAK</strong> direkam atau disimpan oleh kami.</li>
+      </ul>
 
-        <h2>3. Layanan Pihak Ketiga</h2>
-        <p>Kami menggunakan layanan berikut untuk fungsi aplikasi dan operasional internal:</p>
-        <ul>
-          <li><strong>Google AdMob:</strong> Menampilkan iklan yang aman untuk keluarga. AdMob mungkin menggunakan
-            pengidentifikasi anonim untuk pembatasan frekuensi iklan.</li>
-          <li><strong>RevenueCat:</strong> Memproses data transaksi anonim untuk Pembelian Dalam Aplikasi (Premium). Tidak ada
-            identitas pribadi yang disimpan.</li>
-          <li><strong>Firebase Analytics & Crashlytics:</strong> Digunakan untuk memantau performa dan memperbaiki error. Kami
-            menonaktifkan pengumpulan "ID Iklan" untuk melindungi privasi anak.</li>
-          <li><strong>Firebase Remote Config:</strong> Digunakan untuk mengelola pembaruan dan konfigurasi aplikasi.</li>
-          <li><strong>Pengenalan Suara:</strong> Menggunakan API bawaan perangkat. Data suara diproses secara lokal dan
-            <strong>TIDAK</strong> direkam atau disimpan oleh kami.</li>
-        </ul>
+      <h2>4. Privasi Anak</h2>
+      <p>Kami tidak dengan sengaja mengumpulkan informasi pribadi dari anak di bawah usia 13 tahun. Pengumpulan data kami terbatas pada "operasional internal" sesuai aturan COPPA.</p>
 
-        <h2>4. Privasi Anak</h2>
-        <p>Kami tidak dengan sengaja mengumpulkan informasi pribadi dari anak di bawah usia 13 tahun. Pengumpulan data kami
-          terbatas pada "operasional internal" sesuai aturan COPPA.</p>
-
-        <div class="contact-box">
-          <h3>5. Hubungi Kami</h3>
-          <p>Jika ada pertanyaan, hubungi kami di: <strong>dawp.animation@gmail.com</strong></p>
-        </div>
-    </div>
+      <div class="contact-card">
+        <h3>5. Hubungi Kami</h3>
+        <p>Jika Anda memiliki pertanyaan mengenai kebijakan ini, silakan hubungi kami di:</p>
+        <a href="mailto:dawp.animation@gmail.com" class="email-link">dawp.animation@gmail.com</a>
+      </div>
+    </section>
+  </div>
 
 </body>
 </html>
